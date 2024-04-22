@@ -9,7 +9,8 @@ export default {
       firstColor: '#A34343',
       secondColor: '#E9C874',
       thirdColor: '#FBF8DD',
-      fourthColor: '#C0D6E8'
+      fourthColor: '#C0D6E8', 
+      textColor: '#000000'
     }
   },
   plugins: [require("daisyui")],

@@ -52,7 +52,7 @@ function FetchBooks() {
               <img src={book.coverimage} alt={book.title} />{" "}
               {/* Assuming coverImage exists */}
             </figure>
-            <div className="card-body">
+            <div className="card-body text-textColor">
               <h2 className="card-title">{book.title}</h2>
               <p>by {book.author}</p>
               <div className="card-actions justify-end">
@@ -61,6 +61,11 @@ function FetchBooks() {
                   onClick={() => handleDetailsClick(book)}
                 >
                   Details
+                </button>
+                <button
+                  className="btn"
+                >
+                  Checkout
                 </button>
               </div>
             </div>

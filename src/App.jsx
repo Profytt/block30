@@ -4,6 +4,8 @@ import FetchBooks from "./components/Books";
 import bookLogo from "./assets/books.png";
 import Navigation from "./components/Navigations";
 import HomePage from "./components/HomePage";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   const [token, setToken] = useState(null);
@@ -14,6 +16,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/books" element={<FetchBooks />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        
       </Routes>
     </BrowserRouter>
   );
